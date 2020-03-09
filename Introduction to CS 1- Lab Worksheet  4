@@ -1,0 +1,38 @@
+1)
+def func1(*args):
+    for i in args:
+        print(i)
+
+func1(10, 20, 30)
+func1(40, 50)
+
+2)
+total= 0
+
+for i in range (0,11):
+  total +=i
+print(total)
+
+3)
+def printChar(str):
+  for i in range(0, len(str)-1, 2):
+    print("index[",i,"]", str[i] )
+
+inputStr = input("Enter Your String ")
+print("String is ", inputStr)
+
+print("index chars:")
+printChar(inputStr)
+4)
+def name1_name2(numberList):
+  first = numberList[0]
+  last =  numberList[-1]
+  if(first == last):
+    return True
+  else:
+    return False
+
+numList = [10, 20, 30, 40, 10]
+
+print("The first and last number of a list is same")
+print("result is", name1_name2(numList))
